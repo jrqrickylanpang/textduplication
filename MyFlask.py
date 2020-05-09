@@ -96,4 +96,4 @@ def visitor_download():
 
 if __name__ == "__main__":
     work.init()
-    app.run()
+    app.run(port=80)
