@@ -5,3 +5,7 @@ input_join/
 mid/
 report/
 text/
+venv/
+__pycache__
+.idea
+.gitignore
