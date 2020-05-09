@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员模式</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/admin.css') }}">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/toastr.min.js"></script>
+</head>
+<body>
+<div id="all_frame">
+    <p id="image_logo"><img id="middle_pic" src="/static/img/pic1.jpg"></p>
+    <form action="/admin/check_upload/" method="POST" enctype="multipart/form-data">
+        <p><label class="label_input">作弊检测</label><input type="file" name="file" class="input_file"><input type="submit" class="upload_file" value="上传文件"></p>
+    </form>
+    <form action="/admin/download/" method="POST">
+        <p><label class="label_input">检测报告</label><input type="text" name="file" class="input_file"><input type="submit" class="upload_file" value="查找文件"/></p>
+    </form>
+    <form action="/admin/input_upload/" method="POST" enctype="multipart/form-data">
+        <p><label class="label_admin">注册文件</label><input type="file" name="file" class="input_file"><input type="submit" class="upload_admin" value="上传文件"></p>
+    </form>
+    <form action="/admin/reset/" method="POST">
+        <p><label class="label_admin">重置系统</label><input type="password" name="pwd" class="input_file"><input type="submit" class="upload_admin" value="提交密码"/></p>
+    </form>
+    <div id="but_control">
+        <a id="but_left">{{ status }}</a>
+        <a id="but_right" href="{{ url_for('begin') }}">返回登录页</a>
+    </div>
+</div>
+</body>
+</html>

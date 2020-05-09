@@ -1,0 +1,125 @@
+body {
+    background-image: url("../img/pic3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#all_frame {
+    width: 440px;
+    height: 640px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -220px;
+    margin-top: -320px;
+    background-color: rgba(240, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#middle_pic {
+    width: 390px;
+    height: 390px;
+}
+
+form p > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#image_logo {
+    margin-top: 25px;
+}
+
+.label_input {
+    font-size: 14px;
+    font-family: 宋体;
+    width: 80px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    background-color: #3CD8FF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.label_admin {
+    font-size: 14px;
+    font-family: 宋体;
+    width: 80px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    background-color: #33FF6E;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input_file {
+    width: 230px;
+    height: 23px;
+    border: 0;
+}
+
+.upload_file {
+    font-size: 14px;
+    font-family: 宋体;
+    width: 80px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    background-color: #3CD8FF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+
+.upload_admin {
+    font-size: 14px;
+    font-family: 宋体;
+    width: 80px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    background-color: #33FF6E;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+
+#but_left {
+    font-size: 14px;
+    font-family: 宋体;
+    width: 100px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    background-color: #FF33B2;
+    border-radius: 5px;
+    border: 0;
+    float: left;
+}
+
+#but_right {
+    font-size: 14px;
+    font-family: 宋体;
+    width: 100px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    background-color: #3CD8FF;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+}
+
+#but_control {
+    padding: 0 25px;
+}

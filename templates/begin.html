@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎使用查重系统在线版</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/begin.css') }}">
+</head>
+<body>
+<div id="all_frame">
+    <p id="image_logo"><img id="middle_pic" src="/static/img/pic0.jpg"></p>
+    <form action="/login/" method="POST">
+        <p><label class="label_input">用户名</label><input type="text" name="uid" class="input_field"/></p>
+        <p><label class="label_input">密码</label><input type="password" name="pwd" class="input_field"/></p>
+        <div id="but_control">
+            <input type="submit" id="but_left" value="管理员登录"/>
+            <a id="but_right" href="{{ url_for('visitor') }}">游客访问</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

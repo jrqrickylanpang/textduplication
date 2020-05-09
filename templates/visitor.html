@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游客模式</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/visitor.css') }}">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/toastr.min.js"></script>
+</head>
+<body>
+<div id="all_frame">
+    <p id="image_logo"><img id="middle_pic" src="/static/img/pic2.jpg"></p>
+    <form action="/visitor/check_upload/" method="POST" enctype="multipart/form-data">
+        <p><label class="label_input">作弊检测</label><input type="file" name="file" class="input_file"><input type="submit" class="upload_file" value="上传文件"></p>
+    </form>
+    <form action="/visitor/download/" method="POST">
+        <p><label class="label_input">检测报告</label><input type="text" name="file" class="input_file"><input type="submit" class="upload_file" value="查找文件"/></p>
+    </form>
+    <div id="but_control">
+        <a id="but_left">{{ status }}</a>
+        <a id="but_right" href="{{ url_for('begin') }}">返回登录页</a>
+    </div>
+</div>
+</body>
+</html>
