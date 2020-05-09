@@ -47,7 +47,7 @@ def upload(f, op, obj, res_word):
 
 
 def download(filename, obj):
-    if not os.path.isfile("report/" + filename):
+    if not os.path.isfile("report/"+filename):
         return render_template(obj, status="查无此报告")
     else:
         return send_from_directory("report/", filename.encode("utf-8").decode("utf-8"), as_attachment=True)
@@ -61,7 +61,7 @@ def admin_check_upload():
 
 @app.route("/admin/download/", methods=["POST"])
 def admin_download():
-    filename = request.form.get("file")+".txt"
+    filename = request.form.get("file")+"_report.txt"
     return download(filename, "admin.html")
 
 
@@ -90,7 +90,7 @@ def visitor_check_upload():
 
 @app.route("/visitor/download/", methods=["POST"])
 def visitor_download():
-    filename = request.form.get("file")+".txt"
+    filename = request.form.get("file")+"_report.txt"
     return download(filename, "visitor.html")
 
 
